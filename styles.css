@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: #e0ffe0;
+  background-color: #050810;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0);
+  z-index: 10;
+  font-size: 22px;
+}
+
+.topbar .logo {
+  height: 300px;
+}
+
+.topbar nav a {
+  margin-left: 20px;
+  color: #c5ffc5;
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  min-height: 150vh;
+  background-image: url("background-forge.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px; /* altura de la cabecera */
+  
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  font-size: 22px;
+}
+
+.section {
+  padding: 80px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .topbar { flex-direction: column; padding: 10px; }
+  .hero { min-height: 100vh; padding-top: 120px; }
+  .section { padding: 40px 20px; }
+}
+
+.project-card { 
+  background: rgba(0,20,10,0.8); border-radius: 12px; padding: 20px; margin: 20px 0; box-shadow: 0 4px 20px rgba(0,255,0,0.1); 
+}
+.skills-list { display: flex; flex-wrap: wrap; gap: 10px; }
+.skill-tag { background: rgba(0,255,0,0.2); padding: 8px 16px; border-radius: 20px; }
+
+.project-card { 
+  background: rgba(0,20,10,0.9); 
+  border: 1px solid #0f3; 
+  border-radius: 12px; 
+  padding: 24px; 
+  margin: 20px 0; 
+  backdrop-filter: blur(10px);
+}
+.tech { color: #0f0; font-size: 0.9em; margin: 12px 0; }
+.links { margin-top: 16px; }
+.btn { 
+  display: inline-block; 
+  margin: 5px; 
+  padding: 10px 20px; 
+  text-decoration: none; 
+  border-radius: 8px; 
+  font-weight: bold;
+}
+.btn-demo { background: #0f3; color: #000; }
+.btn-github { background: transparent; border: 1px solid #0f3; color: #0f3; }
+
+.project-card { background: rgba(0,20,10,0.9); border: 1px solid #0f3; border-radius: 12px; padding: 24px; margin: 20px 0; }
+.tech { color: #0f0; font-size: 0.9em; margin: 12px 0; }
+.links { margin-top: 16px; }
+.btn { display: inline-block; margin: 5px; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-weight: bold; }
+.btn-demo { background: #0f3; color: #000; }
+.btn-github { background: transparent; border: 1px solid #0f3; color: #0f3; }
+.btn-hero { background: #0f3; color: #000; padding: 16px 32px; font-size: 18px; }
+
+
+
